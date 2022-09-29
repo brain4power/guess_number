@@ -23,7 +23,7 @@ def number_guesser(hidden_number: int) -> int:
     return attempts_number
 
 
-def guesser_checker(guess_algorithm_func: Callable[[int], float]) -> float:
+def guesser_checker(guess_algorithm_func: Callable[[int], int]) -> float:
     """
     Calculate mean of number of attempts of number guess algorithm
     :param guess_algorithm_func: guess algorithm function
