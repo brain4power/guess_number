@@ -35,7 +35,7 @@ def guesser_checker(guess_algorithm_func: Callable[[int], float]) -> float:
         number = random.randint(1, 100)
         attempts_number = guess_algorithm_func(number)
         accumulated_attempts_value += attempts_number
-    return accumulated_attempts_value / 1000
+    return accumulated_attempts_value / total_checks
 
 
 if __name__ == '__main__':
